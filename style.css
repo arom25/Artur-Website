@@ -56,3 +56,32 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.left {
+    flex: 2;
+    padding-right: 30px;
+}
+.right {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.skills-languages {
+    display: flex;
+    justify-content: space-between;
+}
+.skills, .languages {
+    width: 48%;
+}
