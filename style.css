@@ -81,12 +81,16 @@ footer {
 .skills-languages {
     display: flex;
     justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    gap: 20px; /* Adds spacing between skills and languages */
 }
+
 .skills, .languages {
     width: 48%;
-    margin: 40px auto;
+    padding: 20px;
     background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove auto margin to avoid misalignment */
 }
