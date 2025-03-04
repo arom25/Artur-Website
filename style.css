@@ -109,6 +109,7 @@ section {
 .skills-languages {
     display: flex;
     justify-content: space-between;
+    max-width: 800px; /* Limits width */
     gap: 20px;
 }
 
