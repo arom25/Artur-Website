@@ -78,35 +78,12 @@ nav ul li a {
     opacity: 0.8;
 }
 
-
 footer {
     text-align: center;
     padding: 10px;
     background: #222;
     color: white;
     margin-top: 20px;
-}
-
-.container {
-    display: flex;
-    max-width: 1000px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-.left {
-    flex: 2;
-    padding-right: 30px;
-}
-.right {
-    flex: 1;
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
 }
 
 section {
@@ -118,6 +95,15 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
 
+}
+
+#skills-languages {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Limits width */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .skills-languages {
