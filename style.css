@@ -116,13 +116,13 @@ header {
 }
 
 .logo h1 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 600;
     margin: 0;
 }
 
 .logo p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     margin: 5px 0 0;
     opacity: 0.8;
@@ -161,12 +161,12 @@ nav ul li a:hover {
     }
 
     .logo h1 {
-        font-size: 26px; /* Smaller font size for mobile */
+        font-size: 22px; /* Smaller font size for mobile */
         margin: 10px 0; /* Adjust margin to avoid too much space */
     }
 
     .logo p {
-        font-size: 16px; /* Smaller font size for mobile */
+        font-size: 12px; /* Smaller font size for mobile */
         opacity: 0.8;
         margin: 5px 0;
     }
@@ -194,6 +194,10 @@ nav ul li a:hover {
     .header-container {
         max-width: 411px; /* OnePlus 8 Pro viewport */
         margin: 0 auto;
+    }
+
+    .project-list h3 {
+        text-align: left;
     }
 }
 
