@@ -35,10 +35,10 @@ body {
 
 .project-list li::before {
     content: "•";
-    position: absolute; /* Keeps the bullet in place */
+    position: absolute;
     left: 0; /* Aligns the bullet to the left of the text */
-    top: 50%;
-    transform: translateY(-50%); /* Centers vertically */
+    top: 50%; /* Aligns the bullet vertically to the middle */
+    transform: translateY(-50%); /* Corrects the alignment to be perfectly centered */
     font-size: 24px;
     color: #007bff;
 }
@@ -47,6 +47,8 @@ body {
     font-size: 18px;
     font-weight: 600;
     margin: 0 0 5px;
+    text-align: left;
+    line-height: 1.2; /* Optionally, adjust line-height for better vertical centering */
 }
 
 .project-list p {
