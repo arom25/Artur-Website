@@ -1,239 +1,219 @@
-/* Base styling for larger screens (laptop/desktop) */
+/* Base styling */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f0f0f0;
     color: #333;
 }
 
-#projects {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#projects h2 {
-    text-align: left;
-    font-size: 26px;
+h1, h2, h3 {
     font-weight: 600;
-    margin-bottom: 20px;
 }
 
-.project-list {
-    list-style: none;
-    padding: 0;
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
 }
 
-.project-list li {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 20px;
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-.project-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    font-size: 24px;
-    color: #007bff;
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.project-list h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 0 5px;
-}
-
-.project-list p {
-    font-size: 14px;
+p {
     font-weight: 300;
-    margin: 0;
-    padding-left: 20px;
-    opacity: 0.8;
+    line-height: 1.6;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #222;
-    color: white;
-    margin-top: 20px;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: justify;
+a:hover {
+    text-decoration: underline;
 }
 
-#skills-languages {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.skills-languages {
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    gap: 20px;
-}
-
-.skills, .languages {
-    width: 50%;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Header */
 header {
-    background: #222;
+    background-color: #222;
     color: white;
     padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1100px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
 }
 
-.logo h1 {
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0;
-}
-
-.logo p {
-    font-size: 18px;
-    font-weight: 300;
-    margin: 5px 0 0;
-    opacity: 0.8;
-}
-
 nav ul {
-    list-style: none;
     display: flex;
     gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
+    list-style: none;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #00aaff;
 }
 
-/* Responsive Styles for Mobile and Tablets */
-/* Mobile screens (up to 767px) */
-@media (max-width: 767px) {
+/* Sections */
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#about, section#projects, section#skills-languages, section#contact {
+    padding: 60px 20px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 20px;
+}
+
+.project-list li h3 a {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.project-list li h3 a:hover {
+    color: #0056b3;
+}
+
+.project-list p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Skills & Languages */
+.skills-languages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills, .languages {
+    width: 45%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Access Button */
+.access-button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.access-button:hover {
+    background-color: #0056b3;
+}
+
+/* CV Section */
+#cv {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#cv button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cv button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         text-align: center;
-        padding: 10px 0; /* Reduced padding to make it more compact */
-    }
-
-    .logo h1 {
-        font-size: 14px; /* Smaller font size for mobile */
-        margin: 10px 0; /* Adjust margin to avoid too much space */
-    }
-
-    .logo p {
-        font-size: 12px; /* Smaller font size for mobile */
-        opacity: 0.8;
-        margin: 5px 0;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        display: block;
-    }
-
-    nav ul li a {
-        font-size: 18px; /* Make the links smaller for mobile */
-    }
-
-    /* Adjust the header background and padding to fit better */
-    header {
-        padding: 15px 0;
-    }
-
-    /* Limit header-container width */
-    .header-container {
-        max-width: 411px; /* OnePlus 8 Pro viewport */
-        margin: 0 auto;
-    }
-
-    .project-list h3 {
-        text-align: left;
-    }
-}
-
-/* Tablet screens (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    section {
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 90%;
-    }
-
-    #projects, #skills-languages {
-        padding: 20px;
-        margin: 20px 0;
-        max-width: 90%;
     }
 
     .skills-languages {
         flex-direction: column;
+        text-align: center;
     }
 
     .skills, .languages {
         width: 100%;
     }
 
-    .project-list li {
-        padding-left: 25px;
+    section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .access-button, #cv button {
+        width: 80%;
+        font-size: 14px;
     }
 }
