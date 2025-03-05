@@ -94,13 +94,27 @@
 
     </section>
 
-    <section id="cv">
+    <section id="cv" style="display: none;">
         <h2>Downloads</h2>
         <a href="Artur_Romero_Hazas_Resume.pdf" download>
             <button>Download Resume</button>
         </a>
         <p>Last update: March 2025</p>
     </section>
+    
+    <button onclick="unlockDownloads()">Access Downloads</button>
+    
+    <script>
+    function unlockDownloads() {
+        let password = prompt("Enter the access password:");
+        if (password === "1234") { // Change this password to your own
+            document.getElementById('cv').style.display = 'block';
+        } else {
+            alert("Incorrect password. Access denied.");
+        }
+    }
+    </script>
+    
 
     
 </body>
