@@ -161,7 +161,7 @@ nav ul li a:hover {
     }
 
     .logo h1 {
-        font-size: 22px; /* Smaller font size for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
         margin: 10px 0; /* Adjust margin to avoid too much space */
     }
 
