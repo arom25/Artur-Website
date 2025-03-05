@@ -29,16 +29,15 @@ body {
 
 .project-list li {
     position: relative;
-    padding-left: 30px; /* Ensures space for the bullet */
+    padding-left: 25px;
     margin-bottom: 20px;
 }
 
 .project-list li::before {
     content: "•";
-    position: absolute; /* Keeps the bullet in place */
-    left: 0; /* Aligns the bullet to the left of the text */
-    top: 50%;
-    transform: translateY(-50%); /* Centers vertically */
+    position: absolute;
+    left: 0;
+    top: 5px;
     font-size: 24px;
     color: #007bff;
 }
