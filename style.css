@@ -29,15 +29,16 @@ body {
 
 .project-list li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px; /* Ensures space for the bullet */
     margin-bottom: 20px;
 }
 
 .project-list li::before {
     content: "•";
-    position: absolute;
-    left: 0;
-    top: 5px;
+    position: absolute; /* Keeps the bullet in place */
+    left: 0; /* Aligns the bullet to the left of the text */
+    top: 50%;
+    transform: translateY(-50%); /* Centers vertically */
     font-size: 24px;
     color: #007bff;
 }
@@ -72,13 +73,12 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
-
 }
 
 #skills-languages {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px; /* Limits width */
+    max-width: 800px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -87,7 +87,7 @@ section {
 .skills-languages {
     display: flex;
     justify-content: space-between;
-    max-width: 800px; /* Limits width */
+    max-width: 800px;
     gap: 20px;
 }
 
@@ -149,4 +149,91 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #00aaff;
+}
+
+/* Responsive Styles for Mobile and Tablets */
+
+/* Mobile screens (up to 767px) */
+@media (max-width: 767px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+        max-width: 100%;
+    }
+
+    #projects, #skills-languages {
+        padding: 15px;
+        margin: 15px 0;
+        max-width: 100%;
+    }
+
+    .skills-languages {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skills, .languages {
+        width: 100%;
+    }
+
+    .project-list li {
+        padding-left: 20px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+/* Tablet screens (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    #projects, #skills-languages {
+        padding: 20px;
+        margin: 20px 0;
+        max-width: 90%;
+    }
+
+    .skills-languages {
+        flex-direction: column;
+    }
+
+    .skills, .languages {
+        width: 100%;
+    }
+
+    .project-list li {
+        padding-left: 25px;
+    }
 }
