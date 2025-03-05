@@ -74,15 +74,15 @@ nav ul li a:hover {
 /* Sections */
 section {
     background-color: white;
-    margin: 20px auto;
-    padding: 30px;
+    margin: 10px auto;
+    padding: 20px;
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section#about, section#projects, section#skills-languages, section#contact {
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 #projects ul {
