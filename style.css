@@ -59,34 +59,100 @@ nav ul li a:hover {
     color: #00aaff;
 }
 
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+#projects, #skills-languages {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-languages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills, .languages {
+    width: 50%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    position: relative;
+    padding-left: 30px; /* Ensures space for the bullet */
+    margin-bottom: 20px;
+}
+
+.project-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0; /* Aligns the bullet to the left of the text */
+    top: 50%; /* Aligns the bullet vertically to the middle */
+    transform: translateY(-50%); /* Corrects the alignment to be perfectly centered */
+    font-size: 24px;
+    color: #007bff;
+}
+
+.project-list h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    text-align: left;
+}
+
+.project-list p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding-left: 20px;
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Styles for Mobile and Tablets */
+
 /* Mobile screens (up to 767px) */
 @media (max-width: 767px) {
     .header-container {
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        padding: 10px;
-    }
-
-    .logo h1 {
-        font-size: 22px; /* Adjust header size */
-    }
-
-    .logo p {
-        font-size: 12px; /* Adjust subheader size */
-        margin-top: 5px;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
         margin-top: 10px;
-        padding: 0;
     }
 
     nav ul li {
         display: block;
-        text-align: center;
     }
 
     nav ul li a {
@@ -159,14 +225,4 @@ nav ul li a:hover {
     .project-list li {
         padding-left: 25px;
     }
-}
-
-/* Additional style adjustments for the project titles (h3) */
-.project-list h3 {
-    text-align: left; /* Ensure alignment to left */
-}
-
-/* Ensure the project list items are properly aligned on mobile */
-.project-list li {
-    padding-left: 30px; /* Space for the bullet */
 }
