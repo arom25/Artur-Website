@@ -152,12 +152,23 @@ nav ul li a:hover {
 }
 
 /* Responsive Styles for Mobile and Tablets */
-
 /* Mobile screens (up to 767px) */
 @media (max-width: 767px) {
     .header-container {
         flex-direction: column;
         text-align: center;
+        padding: 10px 0; /* Reduced padding to make it more compact */
+    }
+
+    .logo h1 {
+        font-size: 22px; /* Smaller font size for mobile */
+        margin: 10px 0; /* Adjust margin to avoid too much space */
+    }
+
+    .logo p {
+        font-size: 12px; /* Smaller font size for mobile */
+        opacity: 0.8;
+        margin: 5px 0;
     }
 
     nav ul {
@@ -170,34 +181,19 @@ nav ul li a:hover {
         display: block;
     }
 
-    section {
-        padding: 15px;
-        margin: 15px;
-        max-width: 100%;
+    nav ul li a {
+        font-size: 14px; /* Make the links smaller for mobile */
     }
 
-    #projects, #skills-languages {
-        padding: 15px;
-        margin: 15px 0;
-        max-width: 100%;
+    /* Adjust the header background and padding to fit better */
+    header {
+        padding: 15px 0;
     }
 
-    .skills-languages {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .skills, .languages {
-        width: 100%;
-    }
-
-    .project-list li {
-        padding-left: 20px;
-    }
-
-    footer {
-        padding: 10px;
-        font-size: 12px;
+    /* Limit header-container width */
+    .header-container {
+        max-width: 411px; /* OnePlus 8 Pro viewport */
+        margin: 0 auto;
     }
 }
 
