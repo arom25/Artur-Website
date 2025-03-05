@@ -74,11 +74,15 @@ nav ul li a:hover {
 /* Sections */
 section {
     background-color: white;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 10px auto;  /* Reduces the margin space around the section */
+    padding: 10px 10px; /* Reduces vertical (top/bottom) padding */
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    text-align: justify;
 }
 
 section#about, section#projects, section#skills-languages, section#contact {
